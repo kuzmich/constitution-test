@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Анкета для определения типа конституции</title>
   <link rel="stylesheet" href="styles.css?edit=2022-08-14_20-57">
-  <script defer src="calc-results.js?edit=2022-08-14_04-08"></script>
+  <script defer src="calc-results.js?edit=2022-08-15_11-06"></script>
 </head>
 
 <body>
@@ -193,19 +193,164 @@
       <details>
         <summary>Описание этой части анкеты</summary>
         <p>
-          Характеристики, включенные в эту часть анкеты, описывают соотношение дош в вашем организме на настоящий момент.
-          Ответьте на вопросы и сопоставьте результаты со своей изначальной пропорцией дош, которую вы определили с
-          помощью части I. Проверьте, не отклонилась ли ваша конституция от этих исходных показателей.
+          Характеристики, включенные в эту часть анкеты, описывают соотношение дош в вашем организме на настоящий момент - Викрити.
+          Ответьте на вопросы и сопоставьте результаты со своей изначальной пропорцией дош, которую вы определили с помощью части I.
+        </p>
+        <p>
+          Проверьте, не отклонилась ли ваша конституция от этих исходных показателей. Многие признаки,
+          перечисленные в пунктах части II, представляют собой симптомы дисбаланса, и от них желательно избавиться.
         </p>
         <p>  
-          Многие признаки,
-          перечисленные в пунктах части II, представляют собой симптомы дисбаланса, и от них желательно избавиться. К
-          примеру, если от рождения у вас преобладает вата, но ответы на вопросы части II свидетельствуют о сдвиге
-          равновесия в сторону капхи (прибавление в весе, задержка жидкости, тяга к сладкому и т.п.), это указывает на
-          дисбаланс капхи, который необходимо устранить.
+          К примеру, если от рождения у вас преобладает Вата, но ответы на вопросы части II свидетельствуют о сдвиге
+          равновесия в сторону Капхи (прибавление в весе, задержка жидкости, тяга к сладкому и т.п.), это указывает на
+          дисбаланс Капхи, который необходимо устранить.
         </p>
       </details>
 
+      <ul>
+        <li>
+          <fieldset>
+            <legend>1. Набор веса</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q1-vata"> Трудно набрать вес</label></li>
+              <li><label><input type="checkbox" name="vik-q1-pitta"> При желании можно довольно легко набрать или сбросить вес</label></li>
+              <li><label><input type="checkbox" name="vik-q1-kapha"> Легко набрать вес, но трудно сбросить без физических упражнений</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>2. Температура</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q2-vata"> Холодные кисти рук и стопы</label></li>
+              <li><label><input type="checkbox" name="vik-q2-pitta"> Теплая кожа</label></li>
+              <li><label><input type="checkbox" name="vik-q2-kapha"> Кожа прохладная, но не холодная</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>3. Кожа</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q3-vata"> Кожа сухая, тонкая (если вы ущипнете себя за предплечье, толщина кожи составит около 0,5 см),
+                легко трескается. Склонность к образованию мозолей</label></li>
+              <li><label><input type="checkbox" name="vik-q3-pitta"> Кожа жирная; склонность к образованию прыщей и сыпи. Толщина 0,5—1 см</label></li>
+              <li><label><input type="checkbox" name="vik-q3-kapha"> Кожа толстая (толщина 2 см и более), хорошо увлажняется</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>4. Губы</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q4-vata"> Часто появляются трещины на губах</label></li>
+              <li><label><input type="checkbox" name="vik-q4-pitta"> Губы темно-красные, часто - герпес, волдыри на губах</label></li>
+              <li><label><input type="checkbox" name="vik-q4-kapha"> Губы полные, влажные</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>5. Волосы</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q5-vata"> Волосы сухие, тусклые, с секущимися концами, темные, жесткие, курчавые</label></li>
+              <li><label><input type="checkbox" name="vik-q5-pitta"> Волосы тонкие, жирные, русые, рыжие или с ранней сединой; волосы рано редеют, возможно облысение</label></li>
+              <li><label><input type="checkbox" name="vik-q5-kapha"> Волосы густые, слегка волнистые, жирноватые, темные, блестящие</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>6. Холод и жара</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q6-vata"> Плохо переносите сухость и холод, предпочитаете тепло</label></li>
+              <li><label><input type="checkbox" name="vik-q6-pitta"> Предпочитаете прохладные, хорошо проветриваемые помещения, плохо переносите жару</label></li>
+              <li><label><input type="checkbox" name="vik-q6-kapha"> Терпимо относитесь почти к любым климатическим условиям, но плохо переносите повышенную влажность</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>7. Язык</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q7-vata"> Язык сухой, с тонким сероватым налетом</label></li>
+              <li><label><input type="checkbox" name="vik-q7-pitta"> Язык с желтоватым, слегка оранжевым или красноватым налетом</label></li>
+              <li><label><input type="checkbox" name="vik-q7-kapha"> Язык опухший, с толстым, творожистым, белым налетом</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>8. Глаза</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q8-vata"> Глаза часто сухие и чешутся, склеры (белки глаз) сероватые или голубоватые</label></li>
+              <li><label><input type="checkbox" name="vik-q8-pitta"> Склеры красноватые или желтоватые</label></li>
+              <li><label><input type="checkbox" name="vik-q8-kapha"> Склонность к отекам век</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>9. Стул</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q9-vata"> Стул нерегулярный, твердый, сухой; возможны запоры</label></li>
+              <li><label><input type="checkbox" name="vik-q9-pitta"> Стул обильный, более двух раз в день; возможны поносы</label></li>
+              <li><label><input type="checkbox" name="vik-q9-kapha"> Стул обильный, один раз вдень; возможны слизистые выделения, зуд</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>10. Характер расстройств</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q10-vata"> Склонность к нервным расстройствам и острым болям</label></li>
+              <li><label><input type="checkbox" name="vik-q10-pitta"> Склонность к заболеваниям с повышенной температурой, сыпям, воспалениям</label></li>
+              <li><label><input type="checkbox" name="vik-q10-kapha"> Склонность к отекам, задержке жидкости и слизи, застойным явлениям</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>11. Либидо</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q11-vata"> Половое влечение нерегулярное, склонность к сексуальным фантазиям</label></li>
+              <li><label><input type="checkbox" name="vik-q11-pitta"> Половое влечение сильное, возбуждаетесь легко</label></li>
+              <li><label><input type="checkbox" name="vik-q11-kapha"> Половое влечение регулярное, возбуждаетесь медленно</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>12. Критические дни</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q12-vata"> Менструации нерегулярные, скудные, с сильными болезненными спазмами</label></li>
+              <li><label><input type="checkbox" name="vik-q12-pitta"> Возможны обильные кровотечения; менструации сопровождаются поносом</label></li>
+              <li><label><input type="checkbox" name="vik-q12-kapha"> При менструациях бывают отеки; спазмы слабые или отсутствуют</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>13. Предпочтения в еде</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q13-vata"> Либо злоупотребляете жирной и сладкой пищей, либо сидите на строгой диете</label></li>
+              <li><label><input type="checkbox" name="vik-q13-pitta"> Отдаете предпочтение белковой пище, напиткам с кофеином, а также горячей, острой и соленой пище</label></li>
+              <li><label><input type="checkbox" name="vik-q13-kapha"> Предпочитаете сладкие, молочные и мучные продукты</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>14. Десны</legend>
+            <ul>
+              <li><label><input type="checkbox" name="vik-q14-vata"> Слабые десны</label></li>
+              <li><label><input type="checkbox" name="vik-q14-pitta"> Склонность к воспалению и кровоточивости десен</label></li>
+              <li><label><input type="checkbox" name="vik-q14-kapha"> Десны крепкие</label></li>
+            </ul>
+          </fieldset>
+        </li>
+      </ul>
+      <strong>Итог:</strong> <output>Вата - 0%, Питта - 0%, Капха - 0%.</output>
     </fieldset>
   </form>
 
