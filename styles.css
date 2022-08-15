@@ -30,3 +30,7 @@ fieldset fieldset {
     border-inline: none;
     border-block-end: none;
 }
+
+fieldset fieldset li + li {
+    margin-top: 0.5rem;
+}

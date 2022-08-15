@@ -6,16 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Анкета для определения типа конституции</title>
-  <link rel="stylesheet" href="styles.css?edit=2022-08-14_20-57">
-  <script defer src="calc-results.js?edit=2022-08-15_11-06"></script>
+  <link rel="stylesheet" href="styles.css?edit=2022-08-15_18-47">
+  <script defer src="results-calculator.js?edit=2022-08-15_18-42"></script>
 </head>
 
 <body>
   <h1>Анкета для определения типа конституции</h1>
+  <nav>
+    Перейти к части:
+    <ul>
+      <li><a href="#prakriti">1. Пракрити</a></li>
+      <li><a href="#vikriti">2. Викрити</a></li>
+      <li><a href="#intelligence">3. Интеллект</a></li>
+      <li><a href="#">4. Эмоции</a></li>
+    </ul>
+  </nav>
   <p>
-    В каждом пункте анкеты выберите ту характеристику, которая лучше всего вам подходит.
-    В отдельных случаях можете при необходимости отметить две или даже три характеристики.
-    Некоторые пункты можно пропустить.
+    <strong>
+      В каждом пункте анкеты выберите ту характеристику, которая лучше всего вам подходит.
+      В отдельных случаях можете при необходимости отметить две или даже три характеристики.
+      Некоторые пункты можно пропустить.
+    </strong>
   </p>
   <form action="" method="post">
     <fieldset id="prakriti">
@@ -193,14 +204,16 @@
       <details>
         <summary>Описание этой части анкеты</summary>
         <p>
-          Характеристики, включенные в эту часть анкеты, описывают соотношение дош в вашем организме на настоящий момент - Викрити.
-          Ответьте на вопросы и сопоставьте результаты со своей изначальной пропорцией дош, которую вы определили с помощью части I.
+          Характеристики, включенные в эту часть анкеты, описывают соотношение дош в вашем организме на настоящий момент
+          - Викрити.
+          Ответьте на вопросы и сопоставьте результаты со своей изначальной пропорцией дош, которую вы определили с
+          помощью части I.
         </p>
         <p>
           Проверьте, не отклонилась ли ваша конституция от этих исходных показателей. Многие признаки,
           перечисленные в пунктах части II, представляют собой симптомы дисбаланса, и от них желательно избавиться.
         </p>
-        <p>  
+        <p>
           К примеру, если от рождения у вас преобладает Вата, но ответы на вопросы части II свидетельствуют о сдвиге
           равновесия в сторону Капхи (прибавление в весе, задержка жидкости, тяга к сладкому и т.п.), это указывает на
           дисбаланс Капхи, который необходимо устранить.
@@ -213,8 +226,10 @@
             <legend>1. Набор веса</legend>
             <ul>
               <li><label><input type="checkbox" name="vik-q1-vata"> Трудно набрать вес</label></li>
-              <li><label><input type="checkbox" name="vik-q1-pitta"> При желании можно довольно легко набрать или сбросить вес</label></li>
-              <li><label><input type="checkbox" name="vik-q1-kapha"> Легко набрать вес, но трудно сбросить без физических упражнений</label></li>
+              <li><label><input type="checkbox" name="vik-q1-pitta"> При желании можно довольно легко набрать или
+                  сбросить вес</label></li>
+              <li><label><input type="checkbox" name="vik-q1-kapha"> Легко набрать вес, но трудно сбросить без
+                  физических упражнений</label></li>
             </ul>
           </fieldset>
         </li>
@@ -232,10 +247,13 @@
           <fieldset>
             <legend>3. Кожа</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q3-vata"> Кожа сухая, тонкая (если вы ущипнете себя за предплечье, толщина кожи составит около 0,5 см),
-                легко трескается. Склонность к образованию мозолей</label></li>
-              <li><label><input type="checkbox" name="vik-q3-pitta"> Кожа жирная; склонность к образованию прыщей и сыпи. Толщина 0,5—1 см</label></li>
-              <li><label><input type="checkbox" name="vik-q3-kapha"> Кожа толстая (толщина 2 см и более), хорошо увлажняется</label></li>
+              <li><label><input type="checkbox" name="vik-q3-vata"> Кожа сухая, тонкая (если вы ущипнете себя за
+                  предплечье, толщина кожи составит около 0,5 см),
+                  легко трескается. Склонность к образованию мозолей</label></li>
+              <li><label><input type="checkbox" name="vik-q3-pitta"> Кожа жирная; склонность к образованию прыщей и
+                  сыпи. Толщина 0,5—1 см</label></li>
+              <li><label><input type="checkbox" name="vik-q3-kapha"> Кожа толстая (толщина 2 см и более), хорошо
+                  увлажняется</label></li>
             </ul>
           </fieldset>
         </li>
@@ -244,7 +262,8 @@
             <legend>4. Губы</legend>
             <ul>
               <li><label><input type="checkbox" name="vik-q4-vata"> Часто появляются трещины на губах</label></li>
-              <li><label><input type="checkbox" name="vik-q4-pitta"> Губы темно-красные, часто - герпес, волдыри на губах</label></li>
+              <li><label><input type="checkbox" name="vik-q4-pitta"> Губы темно-красные, часто - герпес, волдыри на
+                  губах</label></li>
               <li><label><input type="checkbox" name="vik-q4-kapha"> Губы полные, влажные</label></li>
             </ul>
           </fieldset>
@@ -253,9 +272,12 @@
           <fieldset>
             <legend>5. Волосы</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q5-vata"> Волосы сухие, тусклые, с секущимися концами, темные, жесткие, курчавые</label></li>
-              <li><label><input type="checkbox" name="vik-q5-pitta"> Волосы тонкие, жирные, русые, рыжие или с ранней сединой; волосы рано редеют, возможно облысение</label></li>
-              <li><label><input type="checkbox" name="vik-q5-kapha"> Волосы густые, слегка волнистые, жирноватые, темные, блестящие</label></li>
+              <li><label><input type="checkbox" name="vik-q5-vata"> Волосы сухие, тусклые, с секущимися концами, темные,
+                  жесткие, курчавые</label></li>
+              <li><label><input type="checkbox" name="vik-q5-pitta"> Волосы тонкие, жирные, русые, рыжие или с ранней
+                  сединой; волосы рано редеют, возможно облысение</label></li>
+              <li><label><input type="checkbox" name="vik-q5-kapha"> Волосы густые, слегка волнистые, жирноватые,
+                  темные, блестящие</label></li>
             </ul>
           </fieldset>
         </li>
@@ -263,9 +285,12 @@
           <fieldset>
             <legend>6. Холод и жара</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q6-vata"> Плохо переносите сухость и холод, предпочитаете тепло</label></li>
-              <li><label><input type="checkbox" name="vik-q6-pitta"> Предпочитаете прохладные, хорошо проветриваемые помещения, плохо переносите жару</label></li>
-              <li><label><input type="checkbox" name="vik-q6-kapha"> Терпимо относитесь почти к любым климатическим условиям, но плохо переносите повышенную влажность</label></li>
+              <li><label><input type="checkbox" name="vik-q6-vata"> Плохо переносите сухость и холод, предпочитаете
+                  тепло</label></li>
+              <li><label><input type="checkbox" name="vik-q6-pitta"> Предпочитаете прохладные, хорошо проветриваемые
+                  помещения, плохо переносите жару</label></li>
+              <li><label><input type="checkbox" name="vik-q6-kapha"> Терпимо относитесь почти к любым климатическим
+                  условиям, но плохо переносите повышенную влажность</label></li>
             </ul>
           </fieldset>
         </li>
@@ -274,8 +299,10 @@
             <legend>7. Язык</legend>
             <ul>
               <li><label><input type="checkbox" name="vik-q7-vata"> Язык сухой, с тонким сероватым налетом</label></li>
-              <li><label><input type="checkbox" name="vik-q7-pitta"> Язык с желтоватым, слегка оранжевым или красноватым налетом</label></li>
-              <li><label><input type="checkbox" name="vik-q7-kapha"> Язык опухший, с толстым, творожистым, белым налетом</label></li>
+              <li><label><input type="checkbox" name="vik-q7-pitta"> Язык с желтоватым, слегка оранжевым или красноватым
+                  налетом</label></li>
+              <li><label><input type="checkbox" name="vik-q7-kapha"> Язык опухший, с толстым, творожистым, белым
+                  налетом</label></li>
             </ul>
           </fieldset>
         </li>
@@ -283,7 +310,8 @@
           <fieldset>
             <legend>8. Глаза</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q8-vata"> Глаза часто сухие и чешутся, склеры (белки глаз) сероватые или голубоватые</label></li>
+              <li><label><input type="checkbox" name="vik-q8-vata"> Глаза часто сухие и чешутся, склеры (белки глаз)
+                  сероватые или голубоватые</label></li>
               <li><label><input type="checkbox" name="vik-q8-pitta"> Склеры красноватые или желтоватые</label></li>
               <li><label><input type="checkbox" name="vik-q8-kapha"> Склонность к отекам век</label></li>
             </ul>
@@ -293,9 +321,12 @@
           <fieldset>
             <legend>9. Стул</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q9-vata"> Стул нерегулярный, твердый, сухой; возможны запоры</label></li>
-              <li><label><input type="checkbox" name="vik-q9-pitta"> Стул обильный, более двух раз в день; возможны поносы</label></li>
-              <li><label><input type="checkbox" name="vik-q9-kapha"> Стул обильный, один раз вдень; возможны слизистые выделения, зуд</label></li>
+              <li><label><input type="checkbox" name="vik-q9-vata"> Стул нерегулярный, твердый, сухой; возможны
+                  запоры</label></li>
+              <li><label><input type="checkbox" name="vik-q9-pitta"> Стул обильный, более двух раз в день; возможны
+                  поносы</label></li>
+              <li><label><input type="checkbox" name="vik-q9-kapha"> Стул обильный, один раз вдень; возможны слизистые
+                  выделения, зуд</label></li>
             </ul>
           </fieldset>
         </li>
@@ -303,9 +334,12 @@
           <fieldset>
             <legend>10. Характер расстройств</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q10-vata"> Склонность к нервным расстройствам и острым болям</label></li>
-              <li><label><input type="checkbox" name="vik-q10-pitta"> Склонность к заболеваниям с повышенной температурой, сыпям, воспалениям</label></li>
-              <li><label><input type="checkbox" name="vik-q10-kapha"> Склонность к отекам, задержке жидкости и слизи, застойным явлениям</label></li>
+              <li><label><input type="checkbox" name="vik-q10-vata"> Склонность к нервным расстройствам и острым
+                  болям</label></li>
+              <li><label><input type="checkbox" name="vik-q10-pitta"> Склонность к заболеваниям с повышенной
+                  температурой, сыпям, воспалениям</label></li>
+              <li><label><input type="checkbox" name="vik-q10-kapha"> Склонность к отекам, задержке жидкости и слизи,
+                  застойным явлениям</label></li>
             </ul>
           </fieldset>
         </li>
@@ -313,9 +347,12 @@
           <fieldset>
             <legend>11. Либидо</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q11-vata"> Половое влечение нерегулярное, склонность к сексуальным фантазиям</label></li>
-              <li><label><input type="checkbox" name="vik-q11-pitta"> Половое влечение сильное, возбуждаетесь легко</label></li>
-              <li><label><input type="checkbox" name="vik-q11-kapha"> Половое влечение регулярное, возбуждаетесь медленно</label></li>
+              <li><label><input type="checkbox" name="vik-q11-vata"> Половое влечение нерегулярное, склонность к
+                  сексуальным фантазиям</label></li>
+              <li><label><input type="checkbox" name="vik-q11-pitta"> Половое влечение сильное, возбуждаетесь
+                  легко</label></li>
+              <li><label><input type="checkbox" name="vik-q11-kapha"> Половое влечение регулярное, возбуждаетесь
+                  медленно</label></li>
             </ul>
           </fieldset>
         </li>
@@ -323,9 +360,12 @@
           <fieldset>
             <legend>12. Критические дни</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q12-vata"> Менструации нерегулярные, скудные, с сильными болезненными спазмами</label></li>
-              <li><label><input type="checkbox" name="vik-q12-pitta"> Возможны обильные кровотечения; менструации сопровождаются поносом</label></li>
-              <li><label><input type="checkbox" name="vik-q12-kapha"> При менструациях бывают отеки; спазмы слабые или отсутствуют</label></li>
+              <li><label><input type="checkbox" name="vik-q12-vata"> Менструации нерегулярные, скудные, с сильными
+                  болезненными спазмами</label></li>
+              <li><label><input type="checkbox" name="vik-q12-pitta"> Возможны обильные кровотечения; менструации
+                  сопровождаются поносом</label></li>
+              <li><label><input type="checkbox" name="vik-q12-kapha"> При менструациях бывают отеки; спазмы слабые или
+                  отсутствуют</label></li>
             </ul>
           </fieldset>
         </li>
@@ -333,9 +373,12 @@
           <fieldset>
             <legend>13. Предпочтения в еде</legend>
             <ul>
-              <li><label><input type="checkbox" name="vik-q13-vata"> Либо злоупотребляете жирной и сладкой пищей, либо сидите на строгой диете</label></li>
-              <li><label><input type="checkbox" name="vik-q13-pitta"> Отдаете предпочтение белковой пище, напиткам с кофеином, а также горячей, острой и соленой пище</label></li>
-              <li><label><input type="checkbox" name="vik-q13-kapha"> Предпочитаете сладкие, молочные и мучные продукты</label></li>
+              <li><label><input type="checkbox" name="vik-q13-vata"> Либо злоупотребляете жирной и сладкой пищей, либо
+                  сидите на строгой диете</label></li>
+              <li><label><input type="checkbox" name="vik-q13-pitta"> Отдаете предпочтение белковой пище, напиткам с
+                  кофеином, а также горячей, острой и соленой пище</label></li>
+              <li><label><input type="checkbox" name="vik-q13-kapha"> Предпочитаете сладкие, молочные и мучные
+                  продукты</label></li>
             </ul>
           </fieldset>
         </li>
@@ -344,13 +387,127 @@
             <legend>14. Десны</legend>
             <ul>
               <li><label><input type="checkbox" name="vik-q14-vata"> Слабые десны</label></li>
-              <li><label><input type="checkbox" name="vik-q14-pitta"> Склонность к воспалению и кровоточивости десен</label></li>
+              <li><label><input type="checkbox" name="vik-q14-pitta"> Склонность к воспалению и кровоточивости
+                  десен</label></li>
               <li><label><input type="checkbox" name="vik-q14-kapha"> Десны крепкие</label></li>
             </ul>
           </fieldset>
         </li>
       </ul>
       <strong>Итог:</strong> <output>Вата - 0%, Питта - 0%, Капха - 0%.</output>
+    </fieldset>
+
+    <fieldset id="intelligence">
+      <legend>Часть 3. Интеллект</legend>
+      <details>
+        <summary>Описание этой части анкеты</summary>
+        <p>В интеллектуальном плане каждому типу метаболизма присущи свои сильные и слабые стороны. Люди Вата-типа
+          мыслят творчески, но слишком часто меняют убеждения. У представителей Питта-типа хорошая память и
+          организаторские способности, но в своем стремлении к цели они нередко принимают поспешные решения и склонны
+          оказывать давление на других людей. Обладатели доминирующей Капхи легко удерживаются в рамках рабочего
+          распорядка и вдумчиво выполняют указания начальства, но самостоятельные решения они принимают с трудом, и
+          подчас им недостает творческих способностей.</p>
+        <p>Определив свой тип мышления, вы сможете в дальнейшем избежать многих неудобств. К примеру, если в
+          интеллектуальном плане вы принадлежите к Вата-типу, то при выборе профессии или места работы вам желательно
+          отдать предпочтение какому-либо творческому занятию, а не работе, связанной с управлением людьми или с
+          монотонным распорядком.</p>
+      </details>
+      <ul>
+        <li>
+          <fieldset>
+            <legend>1. Внимание и память</legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q1-vata"> Внимание быстро рассеивается, быстро запоминаете новую информацию, но легко забываете</label></li>
+              <li><label><input type="checkbox" name="int-q1-pitta"> Запоминаете новую информацию быстро и надолго; мыслите логически, рационально</label></li>
+              <li><label><input type="checkbox" name="int-q1-kapha"> Для усвоения новой информации требуется довольно много времени, но вы никогда не забываете то, что однажды твердо усвоили</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>2. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q2-vata"> Не любите жесткий распорядок</label></li>
+              <li><label><input type="checkbox" name="int-q2-pitta"> Любите планировать и проводить организационную
+                  работу, особенно если проект находится полностью в вашем распоряжении</label></li>
+              <li><label><input type="checkbox" name="int-q2-kapha"> Хорошо работаете в рамках жесткого
+                  распорядка</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>3. Принятие решений</legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q3-vata"> С трудом принимаете решения и легко их
+                  меняете</label></li>
+              <li><label><input type="checkbox" name="int-q3-pitta"> Быстро принимаете решения, четко видите суть
+                  вещей</label></li>
+              <li><label><input type="checkbox" name="int-q3-kapha"> Принимаете решения медленно, отказываетесь от них с
+                  большим трудом</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>4. Деятельность</legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q4-vata"> Беспокойный, деятельный, подвижный ум. Творческое
+                  мышление</label></li>
+              <li><label><input type="checkbox" name="int-q4-pitta"> Агрессивность, дух соперничества</label></li>
+              <li><label><input type="checkbox" name="int-q4-kapha"> Спокойствие, любовь к неторопливым занятиям, не
+                  требующим большой затраты сил</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>5. Мышление</legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q5-vata"> Творческое мышление</label></li>
+              <li><label><input type="checkbox" name="int-q5-pitta"> Организованное мышление</label></li>
+              <li><label><input type="checkbox" name="int-q5-kapha"> Предпочитаете следовать чужим идеям и
+                  планам</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>6. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q6-vata"> Работаете одновременно над множеством
+                  проектов</label></li>
+              <li><label><input type="checkbox" name="int-q6-pitta"> Постоянно ведете организационную работу,
+                  предпочитаете продвигаться к цели последовательно</label></li>
+              <li><label><input type="checkbox" name="int-q6-kapha"> Сопротивляетесь переменам и новым начинаниям,
+                  предпочитаете простоту</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>7. Дружба</legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q7-vata"> У вас много знакомых, но мало близких друзей</label></li>
+              <li><label><input type="checkbox" name="int-q7-pitta"> Вы очень переборчивы (требовательны, разборчивы,
+                  привередливы), нелегко можете и установить теплые дружеские отношения, и завести врага</label></li>
+              <li><label><input type="checkbox" name="int-q7-kapha"> У вас много друзей, и вы храните им
+                  верность</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>8. Расходы и траты</legend>
+            <ul>
+              <li><label><input type="checkbox" name="int-q8-vata"> Вы склонны к импульсивным расходам и считаете, что деньги существуют для того, чтобы их тратить</label></li>
+              <li><label><input type="checkbox" name="int-q8-pitta"> Вы планируете свои расходы и считаете, что деньги - это средство для достижения целей</label></li>
+              <li><label><input type="checkbox" name="int-q8-kapha"> Вы экономны и бережливы, с трудом расстаетесь с деньгами</label></li>
+            </ul>
+          </fieldset>
+        </li>
+      </ul>
+      <strong>Итог:</strong> <output>Вата 0%, Питта 0%, Капха 0%.</output>
     </fieldset>
   </form>
 
