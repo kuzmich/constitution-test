@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Анкета для определения типа конституции</title>
-  <link rel="stylesheet" href="styles.css?edit=2022-08-15_18-47">
-  <script defer src="results-calculator.js?edit=2022-08-15_18-42"></script>
+  <link rel="stylesheet" href="styles.css?edit=2022-08-16_15-47">
+  <script defer src="results-calculator.js?edit=2022-08-16_16-12"></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <li><a href="#prakriti">1. Пракрити</a></li>
       <li><a href="#vikriti">2. Викрити</a></li>
       <li><a href="#intelligence">3. Интеллект</a></li>
-      <li><a href="#">4. Эмоции</a></li>
+      <li><a href="#emotions">4. Эмоции</a></li>
     </ul>
   </nav>
   <p>
@@ -196,7 +196,7 @@
           </fieldset>
         </li>
       </ul>
-      <strong>Итог:</strong> <output>Вата - 0%, Питта - 0%, Капха - 0%.</output>
+      <output><strong>Итог:</strong> Вата 0%, Питта 0%, Капха 0%.</output>
     </fieldset>
 
     <fieldset id="vikriti">
@@ -394,7 +394,7 @@
           </fieldset>
         </li>
       </ul>
-      <strong>Итог:</strong> <output>Вата - 0%, Питта - 0%, Капха - 0%.</output>
+      <output><strong>Итог:</strong> Вата 0%, Питта 0%, Капха 0%.</output>
     </fieldset>
 
     <fieldset id="intelligence">
@@ -417,9 +417,12 @@
           <fieldset>
             <legend>1. Внимание и память</legend>
             <ul>
-              <li><label><input type="checkbox" name="int-q1-vata"> Внимание быстро рассеивается, быстро запоминаете новую информацию, но легко забываете</label></li>
-              <li><label><input type="checkbox" name="int-q1-pitta"> Запоминаете новую информацию быстро и надолго; мыслите логически, рационально</label></li>
-              <li><label><input type="checkbox" name="int-q1-kapha"> Для усвоения новой информации требуется довольно много времени, но вы никогда не забываете то, что однажды твердо усвоили</label></li>
+              <li><label><input type="checkbox" name="int-q1-vata"> Внимание быстро рассеивается, быстро запоминаете
+                  новую информацию, но легко забываете</label></li>
+              <li><label><input type="checkbox" name="int-q1-pitta"> Запоминаете новую информацию быстро и надолго;
+                  мыслите логически, рационально</label></li>
+              <li><label><input type="checkbox" name="int-q1-kapha"> Для усвоения новой информации требуется довольно
+                  много времени, но вы никогда не забываете то, что однажды твердо усвоили</label></li>
             </ul>
           </fieldset>
         </li>
@@ -488,7 +491,8 @@
           <fieldset>
             <legend>7. Дружба</legend>
             <ul>
-              <li><label><input type="checkbox" name="int-q7-vata"> У вас много знакомых, но мало близких друзей</label></li>
+              <li><label><input type="checkbox" name="int-q7-vata"> У вас много знакомых, но мало близких друзей</label>
+              </li>
               <li><label><input type="checkbox" name="int-q7-pitta"> Вы очень переборчивы (требовательны, разборчивы,
                   привередливы), нелегко можете и установить теплые дружеские отношения, и завести врага</label></li>
               <li><label><input type="checkbox" name="int-q7-kapha"> У вас много друзей, и вы храните им
@@ -500,14 +504,150 @@
           <fieldset>
             <legend>8. Расходы и траты</legend>
             <ul>
-              <li><label><input type="checkbox" name="int-q8-vata"> Вы склонны к импульсивным расходам и считаете, что деньги существуют для того, чтобы их тратить</label></li>
-              <li><label><input type="checkbox" name="int-q8-pitta"> Вы планируете свои расходы и считаете, что деньги - это средство для достижения целей</label></li>
-              <li><label><input type="checkbox" name="int-q8-kapha"> Вы экономны и бережливы, с трудом расстаетесь с деньгами</label></li>
+              <li><label><input type="checkbox" name="int-q8-vata"> Вы склонны к импульсивным расходам и считаете, что
+                  деньги существуют для того, чтобы их тратить</label></li>
+              <li><label><input type="checkbox" name="int-q8-pitta"> Вы планируете свои расходы и считаете, что деньги -
+                  это средство для достижения целей</label></li>
+              <li><label><input type="checkbox" name="int-q8-kapha"> Вы экономны и бережливы, с трудом расстаетесь с
+                  деньгами</label></li>
             </ul>
           </fieldset>
         </li>
       </ul>
-      <strong>Итог:</strong> <output>Вата 0%, Питта 0%, Капха 0%.</output>
+      <output><strong>Итог:</strong> Вата 0%, Питта 0%, Капха 0%.</output>
+    </fieldset>
+
+    <fieldset id="emotions">
+      <legend>Часть IV. Эмоции</legend>
+      <details>
+        <summary>Описание этой части анкеты</summary>
+        <p>
+          В эмоциональных характеристиках каждого типа имеются как положительные, так и отрицательные черты. Люди
+          Вата-типа легко поддаются тревоге и страху, но зато они незлопамятны и не могут долго лелеять обиды. Люди
+          Питта-типа вспыльчивы, но умеют преобразовать свой гнев в боевой дух, необходимый для победы над соперником
+          или для преодоления препятствий. Чувствительность Капхи не позволяет легко прощать обиды, но она же делает
+          представителей этого типа верными и романтичными.
+        </p>
+        <p>
+          Ответив на вопросы этой части анкеты, установите, к какому типу вы относитесь в эмоциональном плане и какие
+          стороны этого типа в вас проявляются ярче — положительные или отрицательные. Соответствуют ли ваши эмоции
+          врожденной конституции (часть I), или у вас проявляются эмоциональные черты, не связанные с вашей доминирующей
+          дошей (часть II)? О том, что это означает, вы узнаете из раздела «Подведение итогов», завершающего анкету.
+        </p>
+      </details>
+      <ul>
+        <li>
+          <fieldset>
+            <legend>1. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q1-vata"> Часто испытываете страх</label></li>
+              <li><label><input type="checkbox" name="em-q1-pitta"> Часто испытываете ненависть</label></li>
+              <li><label><input type="checkbox" name="em-q1-kapha"> Часто испытываете апатию</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>2. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q2-vata"> Скрытность</label></li>
+              <li><label><input type="checkbox" name="em-q2-pitta"> Мстительность</label></li>
+              <li><label><input type="checkbox" name="em-q2-kapha"> Бессердечие</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>3. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q3-vata"> Вы склонны вредить себе</label></li>
+              <li><label><input type="checkbox" name="em-q3-pitta"> Вы склонны причинять вред другим людям</label></li>
+              <li><label><input type="checkbox" name="em-q3-kapha"> Вы чувствуете себя жертвой</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>4. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q4-vata"> Тревога</label></li>
+              <li><label><input type="checkbox" name="em-q4-pitta"> Раздражение</label></li>
+              <li><label><input type="checkbox" name="em-q4-kapha"> Привязчивость</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>5. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q5-vata"> Боязливость</label></li>
+              <li><label><input type="checkbox" name="em-q5-pitta"> Склонность манипулировать людьми</label></li>
+              <li><label><input type="checkbox" name="em-q5-kapha"> Жадность</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>6. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q6-vata"> Нервозность</label></li>
+              <li><label><input type="checkbox" name="em-q6-pitta"> Гневливость</label></li>
+              <li><label><input type="checkbox" name="em-q6-kapha"> Непреодолимые желания</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>7. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q7-vata"> Подвижность</label></li>
+              <li><label><input type="checkbox" name="em-q7-pitta"> Восприимчивость</label></li>
+              <li><label><input type="checkbox" name="em-q7-kapha"> Гармоничность</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>8. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q8-vata"> Общительность</label></li>
+              <li><label><input type="checkbox" name="em-q8-pitta"> Заботливость</label></li>
+              <li><label><input type="checkbox" name="em-q8-kapha"> Самоотверженная любовь</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>9. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q9-vata"> Гибкость</label></li>
+              <li><label><input type="checkbox" name="em-q9-pitta"> Терпимость</label></li>
+              <li><label><input type="checkbox" name="em-q9-kapha"> Терпеливость</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>10. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q10-vata"> Ваши настроения, чувства и эмоции легко меняются</label></li>
+              <li><label><input type="checkbox" name="em-q10-pitta"> Вы агрессивны в своих убеждениях и чувствах, высказываете свое мнение даже тогда, когда вас об этом не просят</label></li>
+              <li><label><input type="checkbox" name="em-q10-kapha"> В трудных ситуациях вы стараетесь не высказывать свое мнение</label></li>
+            </ul>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>11. </legend>
+            <ul>
+              <li><label><input type="checkbox" name="em-q11-vata"> Вам часто снятся полеты; сновидения беспокойны; бывают кошмары</label></li>
+              <li><label><input type="checkbox" name="em-q11-pitta"> Вам снятся цветные, яркие, активные, страстные сны, иногда - с конфликтными ситуациями</label></li>
+              <li><label><input type="checkbox" name="em-q11-kapha"> Сновидения романтические, короткие; вам часто снится вода</label></li>
+            </ul>
+          </fieldset>
+        </li>
+      </ul>
+      <output><strong>Итог:</strong> Вата 0%, Питта 0%, Капха 0%.</output>
     </fieldset>
   </form>
 

@@ -23,11 +23,12 @@ class ResultsCalculator {
         let pitta = Math.round(this.pittaInputs.filter(this.isChecked).length / this.pittaInputs.length * 100);
         let kapha = Math.round(this.kaphaInputs.filter(this.isChecked).length / this.kaphaInputs.length * 100);
 
-        let resultTemplate = `Вата ${vata}%, Питта ${pitta}%, Капха ${kapha}%.`;
-        this.result.textContent = resultTemplate;
+        let resultTemplate = `<strong>Итог:</strong> Вата ${vata}%, Питта ${pitta}%, Капха ${kapha}%.`;
+        this.result.innerHTML = resultTemplate;
     }
 }
 
 new ResultsCalculator('#prakriti');
 new ResultsCalculator('#vikriti');
 new ResultsCalculator('#intelligence');
+new ResultsCalculator('#emotions');

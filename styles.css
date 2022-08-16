@@ -34,3 +34,8 @@ fieldset fieldset {
 fieldset fieldset li + li {
     margin-top: 0.5rem;
 }
+
+output {
+    display: inline-block;
+    margin-block-start: 1rem;
+}
