@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Анкета для определения типа конституции</title>
-  <link rel="stylesheet" href="styles.css?edit=2022-08-16_15-47">
-  <script defer src="results-calculator.js?edit=2022-08-18_11-29"></script>
+  <link rel="stylesheet" href="styles.css?edit=2022-08-18_17-34">
+  <script defer src="results-calculator.js?edit=2022-08-18_17-47"></script>
 </head>
 
 <body>
@@ -651,42 +651,47 @@
 
   <h2 id="results">Подведение итогов</h2>
   <table>
-    <tr>
-      <th></th>
-      <th>Вата</th>
-      <th>Питта</th>
-      <th>Капха</th>
-    </tr>
-    <tr id="prakriti-results">
-      <td>I. Пракрити</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>0%</td>
-    </tr>
-    <tr id="vikriti-results">
-      <td>II. Викрити</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>0%</td>
-    </tr>
-    <tr id="intelligence-results">
-      <td>III. Интеллект</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>0%</td>
-    </tr>
-    <tr id="emotions-results">
-      <td>IV. Эмоции</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>0%</td>
-    </tr>
-    <tr id="summary-totals">
-      <td>Суммарные итоги частей II, III и IV</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>0%</td>
-    </tr>
+    <caption>Результаты отдельных частей анкеты и суммарные итоги</caption>
+    <thead>
+      <tr>
+        <th scope="col">Часть</th>
+        <th scope="col">Вата</th>
+        <th scope="col">Питта</th>
+        <th scope="col">Капха</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="prakriti-results">
+        <th scope="row">I. Пракрити</th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+      </tr>
+      <tr id="vikriti-results">
+        <th scope="row">II. Викрити</th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+      </tr>
+      <tr id="intelligence-results">
+        <th scope="row">III. Интеллект</th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+      </tr>
+      <tr id="emotions-results">
+        <th scope="row">IV. Эмоции</th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+      </tr>
+      <tr id="summary-totals">
+        <th scope="row">Суммарные итоги частей II, III и IV</th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+      </tr>
+    </tbody>
   </table>
 
   <p>

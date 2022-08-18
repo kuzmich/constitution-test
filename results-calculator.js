@@ -36,9 +36,9 @@ class ResultsCalculator {
         this.result.innerHTML = resultTemplate;
 
         let cells = document.querySelectorAll(`${this.sectionID}-results td`);
-        cells[1].textContent = `${vata}%`;
-        cells[2].textContent = `${pitta}%`;
-        cells[3].textContent = `${kapha}%`;
+        cells[0].textContent = `${vata}%`;
+        cells[1].textContent = `${pitta}%`;
+        cells[2].textContent = `${kapha}%`;
     }
 }
 
@@ -68,9 +68,9 @@ class SummaryTotalCalculator {
         kapha = Math.round(kapha / this.sectionCalculators.length);
 
         let cells = document.querySelectorAll('#summary-totals td');
-        cells[1].textContent = `${vata}%`;
-        cells[2].textContent = `${pitta}%`;
-        cells[3].textContent = `${kapha}%`;
+        cells[0].textContent = `${vata}%`;
+        cells[1].textContent = `${pitta}%`;
+        cells[2].textContent = `${kapha}%`;
     }
 }
 
@@ -80,3 +80,16 @@ let intelligenceCalc = new ResultsCalculator('#intelligence');
 let emotionsCalc = new ResultsCalculator('#emotions');
 
 new SummaryTotalCalculator([vikritiCalc, intelligenceCalc, emotionsCalc]);
+
+
+// let inputsState = {};
+
+// for (input of document.querySelectorAll('form input')) {
+//     if (input.checked === true) {
+//         inputsState[input.name] = true;
+//     }
+// }
+
+// localStorage.setItem('constitutionFormState', JSON.stringify(inputsState));
+
+// let cfs = JSON.parse(localStorage.getItem('constitutionFormState'));

@@ -48,3 +48,15 @@ output {
     font: inherit;
     padding: 0.5rem;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+tbody td {
+    text-align: center;
+}
