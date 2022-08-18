@@ -39,3 +39,12 @@ output {
     display: inline-block;
     margin-block-start: 1rem;
 }
+
+.reset-section {
+    margin-block-start: 1rem;
+}
+
+.reset-section button {
+    font: inherit;
+    padding: 0.5rem;
+}
